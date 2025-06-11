@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+   display: flex;
+}
+#dami-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+header {
+    background-color: #DCDCDC;
+    width: 25%;
+    height: 100vh;
+    padding-block: 60px 0px;
+    padding-inline: 30px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav {
+    padding-block: 5px 0px;
+    padding-inline: 50px 0px;
+}
+nav > ul > li {
+  list-style: none; 
+  padding-block: 15px 0px;
+}
+nav > ul > li > a {
+  color: #0F1E38;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  display: inline;
+  transition: all 0.4s ease-in-out;
+}
+nav > ul > li > a:hover {
+    color: white;
+    transform: scale(1.1);
+    }
+main {
+    background-image: linear-gradient(to right, #FFB881, #A885C4);
+    margin-left: 25%;
+    padding-block: 40px 0px;
+    padding-inline: 30px 0px;
+    height: auto;
+    color: #0F1E38;
+}
+#about > h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5em;
+    font-weight: 800;
+    line-height: 2;
+}
+#about > h3 {
+    max-width: 0; 
+    overflow: hidden; 
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    box-sizing: content-box;
+    animation:
+     typing 5s steps(30, end) forwards, blink-cursor 0.75s step-end infinite /* Blinking cursor */
+}
+@keyframes typing {
+    from { max-width: 0; } to { max-width: 300px;}
+}
+@keyframes blink-cursor {
+    from, to { border-right-color: transparent; }
+}
+#about > p {
+    padding-block: 20px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+}
+hr {
+    border: none; 
+    border-top: 1px solid #ccc; 
+    margin: 40px 0px;
+    width: 100%; 
+}
+#project {
+    margin-block: 30px 0px
+}
+.sections h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    line-height: 1;
+    padding-block: 20px 0px;
+}
+#project > p {
+    padding-block: 50px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+}
+#skills > ul {
+    padding-block: 30px 0px;
+}
+#skills > ul > li {
+  list-style: none; 
+  padding-block: 15px 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+#skills > ul > li::before {
+  content: "\f061";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 8px;
+}
+#contact > ul {
+    padding-block: 30px 0px;
+}
+#contact > ul > li {
+  list-style: none; 
+  padding-block: 15px 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+/* Responsive styles for screens up to 800px wide */
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+  header {
+    width: 100%;
+    height: 35px;
+    min-height: 35px;
+    max-height: 35px;
+    position: fixed;
+    padding: 0;
+    background-color: #DCDCDC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  #dami-img {
+    display: none;
+  }
+  nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  nav > ul > li {
+    padding: 0;
+  }
+  nav > ul > li > a {
+    font-size: 1em;
+    padding: 8px 12px;
+    color: #0F1E38;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+    font-family: 'Lato', sans-serif;
+    display: block;
+  }
+  nav > ul > li > a:hover {
+    background: #A885C4;
+    color: #fff;
+  }
+  main {
+    margin-left: 0;
+    padding: 20px 10px 0 10px;
+  }
+}
