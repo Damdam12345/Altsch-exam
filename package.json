@@ -1,0 +1,16 @@
+{
+  "name": "altschool-project2",
+  "version": "1.0.0",
+  "description": "Created a simple nodejs app that shows my portfolio.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

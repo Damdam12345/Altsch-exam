@@ -68,7 +68,7 @@ main {
      typing 5s steps(30, end) forwards, blink-cursor 0.75s step-end infinite /* Blinking cursor */
 }
 @keyframes typing {
-    from { max-width: 0; } to { max-width: 300px;}
+    from { max-width: 0; } to { max-width: 360px;}
 }
 @keyframes blink-cursor {
     from, to { border-right-color: transparent; }
